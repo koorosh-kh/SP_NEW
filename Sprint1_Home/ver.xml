@@ -1,0 +1,37 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Verizon_home_page"> 
+
+<listeners>
+
+<listener class-name="Com.Verizon.Verizon_Home.App"></listener>
+
+</listeners> 
+
+<test name="Verizon">
+
+<parameter name="url" value="https://www.sprint.com/"></parameter>
+
+
+<parameter name="browser" value="chrome"></parameter>
+
+<classes>
+<!-- <class name="RunVer.NewVer1"></class>-->
+<!-- <class name="RunVer.DataProvVer"></class> -->
+<class name="RunVer.Switch"></class>
+</classes>
+</test>
+<test name="Verizon!">
+
+<parameter name="url" value="https://www.sprint.com/"></parameter>
+
+<parameter name="browser" value="firefox"></parameter>
+
+<classes>
+<!-- <class name="RunVer.NewVer1"></class> -->
+<!-- <class name="RunVer.DataProvVer"></class> -->
+<class name="RunVer.Switch"></class>
+
+</classes>
+</test>
+</suite>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Verizon_home_page]">
+  <listeners>
+    <listener class-name="Com.Verizon.Verizon_Home.App"/>
+  </listeners>
+  <test thread-count="5" name="Verizon(failed)">
+    <parameter name="browser" value="chrome"/>
+    <parameter name="url" value="https://www.sprint.com/"/>
+    <classes>
+      <class name="RunVer.Switch">
+        <methods>
+          <include name="afterClass"/>
+          <include name="f"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- RunVer.Switch -->
+    </classes>
+  </test> <!-- Verizon(failed) -->
+  <test thread-count="5" name="Verizon!(failed)">
+    <parameter name="browser" value="firefox"/>
+    <parameter name="url" value="https://www.sprint.com/"/>
+    <classes>
+      <class name="RunVer.Switch">
+        <methods>
+          <include name="afterClass"/>
+          <include name="f"/>
+          <include name="beforeClass"/>
+        </methods>
+      </class> <!-- RunVer.Switch -->
+    </classes>
+  </test> <!-- Verizon!(failed) -->
+</suite> <!-- Failed suite [Verizon_home_page] -->
